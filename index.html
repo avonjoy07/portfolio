@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+	<section class="home" id="home">
+		<div class="hero">
+			<nav>
+				<img id="A.M" class="logo">
+				<ul>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#projects">Projects</a></li> <!-- Link to Projects section -->
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			
+			<form>
+				<input type="email" name="email" id="mail" placeholder="Enter Your Email" required>
+				<input type="submit" name="submit" value="Let's Start">
+			</form>
+		</div>
+	</section>
+
+	<hr>
+
+	<section class="about" id="about">
+		<div class="main">
+			<img src="received_1548247715889278[1].jpeg">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<h5>Developer<span> & Designer</span></h5>
+				<p>I'm Avonjoy a first year student of Bachelor of Science in Information Technology.</p>
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
+	<!-- Skills Section -->
+	<div class="skills" id="skills">
+		<h2>Skills</h2>
+		<div class="skill-box">
+			<div class="skill">
+				<h3>Web Design</h3>
+				<div class="skill-bar">
+					<div class="skill-level" style="width: 80%;"></div>
+				</div>
+			</div>
+			
+			<div class="skill">
+				<h3>Graphic Design</h3>
+				<div class="skill-bar">
+					<div class="skill-level" style="width: 70%;"></div>
+				</div>
+			</div>
+			
+			<div class="skill">
+				<h3>UI/UX Design</h3>
+				<div class="skill-bar">
+					<div class="skill-level" style="width: 90%;"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<!-- Projects Section -->
+<section class="projects" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-list">
+        <div class="project-item">
+            <h3>Project 1: Portfolio Website</h3>
+            <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+            <!-- Link to navigate to the project section -->
+            <a href="#project1" class="project-link">View Details</a>
+        </div>
+
+        <div class="project-item">
+            <h3>Project 2: E-commerce Site</h3>
+            <p>An e-commerce website with product listings, shopping cart, and checkout functionality.</p>
+            <!-- Link to navigate to the project section -->
+            <a href="#project2" class="project-link">View Details</a>
+        </div>
+    </div>
+</section>
+
+	<hr>
+
+	<section class="contact" id="contact">
+		<div class="Contact">
+			<h2>Contact</h2> 
+			<p>Let Me Get You A Beautiful Website.</p>
+		</div>
+		<div class="contact-box">
+			<form>
+				<input type="text" class="text input-field" placeholder="Your Name" required>
+				<input type="email" class="text input-field" placeholder="Your Email" required>
+				<textarea type="text" class="text input-field textarea-field" placeholder="Your Message"></textarea>
+				<button type="button" class="btn">Send Message</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<section>
+		<footer>   
+			<p>For more information- please <span> click</span> the icons below for more information.</p>
+			<div class="social">
+				<a id="profile-link" class="facebook" href="https://www.facebook.com/avonjoy.montilla.3" target="_blank">
+					<i class="fa-brands fa-facebook"></i></a>
+				<a id="profile-link" class="tiktok" href="https://www.tiktok.com/@avonjoymontilla?_t=8cpGOREkDmt&_r=1" target="_blank">
+					<i class="fa-brands fa-tiktok"></i></a>
+			</div>
+			<div class="social">
+				<i class="fa-solid fa-envelope"></i>
+				<p style="margin-top: -13px; ">montillaavonjoy560@gmail.com</p>
+			</div>
+			<p class="end">@Avonjoy</p>
+		</footer>
+	</section>
+
+	<script>
+		// Function to toggle project details visibility
+		function toggleProjectDetails(projectId) {
+			var projectDetails = document.getElementById(projectId);
+			if (projectDetails.style.display === "none") {
+				projectDetails.style.display = "block";
+			} else {
+				projectDetails.style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>
